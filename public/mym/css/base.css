@@ -1,0 +1,37 @@
+body {
+  background: #FFF;
+  font-size: 14px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+.mui-content {
+  background: #FFF;
+}
+.my-footer,
+.my-header {
+  background: #e4393c;
+}
+.my-header .mui-title {
+  color: #FFF;
+}
+.my-header .mui-icon {
+  color: #FFF;
+}
+.my-footer .mui-tab-item {
+  color: #FFF;
+}
+.my-footer .mui-tab-item.mui-active {
+  color: darkorange;
+}
