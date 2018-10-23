@@ -1,0 +1,81 @@
+body {
+  background: #FFF;
+  font-size: 14px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+.mui-content {
+  background: #FFF;
+}
+.my-footer,
+.my-header {
+  background: #e4393c;
+}
+.my-header .mui-title {
+  color: #FFF;
+}
+.my-header .mui-icon {
+  color: #FFF;
+}
+.my-footer .mui-tab-item {
+  color: #FFF;
+}
+.my-footer .mui-tab-item.mui-active {
+  color: darkorange;
+}
+.container {
+  padding: 10px;
+}
+.container > .search {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #e4393c;
+}
+.container > .search > input:first-of-type {
+  float: left;
+  flex: 1;
+  height: 28px;
+  border: none;
+  font-size: 14px;
+}
+.container > .search > input:last-of-type {
+  float: right;
+  width: 60px;
+  height: 28px;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14px;
+  background-color: #e4393c;
+}
+.container > .history-top {
+  width: 100%;
+  font-size: 14px;
+  color: #8f8f94;
+  height: 30px;
+}
+.container > .history-top > span:first-of-type {
+  float: left;
+}
+.container > .history-top > span:last-of-type {
+  float: right;
+}
+.container > .history-top > span:last-of-type > .mui-icon {
+  margin-right: 4px;
+  font-size: 18px;
+}

@@ -11,18 +11,19 @@
     <script src="assets/zepto/zepto.min.js"></script>
     <script src="assets/artTemplate/template-native.js"></script>
     <script src="js/category.js"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
 <header class="mui-bar mui-bar-nav my-header">
-    <h1 class="mui-title">乐淘云购</h1>
-    <a class="mui-icon mui-icon-search mui-pull-right"></a>
+    <h1 class="mui-title">小象购物</h1>
+    <a href="search-result.html" class="mui-icon mui-icon-search mui-pull-right"></a>
 </header>
 <nav class="mui-bar mui-bar-tab my-footer">
-    <a class="mui-tab-item mui-active" href="index.html">
+    <a class="mui-tab-item" href="index.html">
         <span class="mui-icon mui-icon-home"></span>
         <span class="mui-tab-label">首页</span>
     </a>
-    <a class="mui-tab-item" href="category.html">
+    <a class="mui-tab-item mui-active" href="category.html">
         <span class="mui-icon mui-icon-bars"></span>
         <span class="mui-tab-label">分类</span>
     </a>
@@ -58,24 +59,22 @@
 
 <script id="category-first" type="text/template">
     <% for(var i=0;i<result.length;i++){ %>
-    <a
-            href="#"
-            data-id="<%=result[i].id %>"><%=result[i].categoryName %></a>
+        <a href="javascript:;" data-id="<%=result[i].id %>"><%=result[i].categoryName %></a>
     <% } %>
 </script>
 
 <script id="category-second" type="text/template">
     <% for(var i=0;i<rows.length;i++){ %>
-    <li>
-        <a href="#">
-            <img src="<%=rows[i].brandLogo %>">
-            <p><%=rows[i].brandName %></p>
-        </a>
-    </li>
+        <li>
+            <a href="javascript:;">
+                <img src="<%=rows[i].brandLogo %>">
+                <p><%=rows[i].brandName %></p>
+            </a>
+        </li>
     <% } %>
 
     <% if(!rows.length){ %>
-    <div class="noresult">暂无数据</div>
+        <div class="noresult">暂无数据</div>
     <% } %>
 </script>
 </body>
