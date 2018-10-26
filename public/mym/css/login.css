@@ -35,15 +35,18 @@ img {
 .my-footer .mui-tab-item.mui-active {
   color: darkorange;
 }
-.filter {
-  padding: 10px;
+.getCode {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: trabslateY(-50%);
+  color: #e4393c;
 }
-.filter .mui-col-xs-6 {
-  text-align: center;
-  height: 35px;
-  line-height: 35px;
-  background-color: #efeff4;
-}
-.filter .mui-col-xs-6 > .mui-icon {
-  font-size: 18px;
+.login-now {
+  display: block;
+  margin-top: 10px;
+  padding-right: 10px;
+  float: right;
+  font-size: 14px;
+  color: #e4393c;
 }

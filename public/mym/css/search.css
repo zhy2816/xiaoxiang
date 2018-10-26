@@ -79,3 +79,6 @@ img {
   margin-right: 4px;
   font-size: 18px;
 }
+.fa-shopping-cart:before {
+  content: "\f07a";
+}

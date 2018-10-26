@@ -8,7 +8,7 @@ $(function(){
         // 用户输入了关键字
         if(keyword){
             // 将用户输入的关键字存到数组中
-            keyArr.push(keyword);
+            keyArr.unshift(keyword);
             // 将关键字数组存储在本地
             localStorage.setItem('keyArr', JSON.stringify(keyArr));
             location.href = "search-result.html?keyword=" + keyword;
@@ -33,28 +33,28 @@ $(function(){
 })
 
 
-$(function(){
-    $('#searchBtn').on('click',function(){
-        var keyword = $('#keyword').val();
-        if(!keyword){
-            alert('请输入关键字');
-            return;
-        }
-        if(localStorage.getItem('keywords')){
-            var keywords = JSON.parse(localStorage.getItem('keywords'));
-            keywords.push(keyword);
-            localStorage.setItem('keywords',JSON.stringify(keywords));
-        }else{
-            localStorage.setItem('keywords',JSON.stringify([keyword]));
-        }
-        location.href = "search-list.html?key="+keyword;
-    });
-    if(localStorage.getItem('keywords')){
-        var keywords = JSON.parse(localStorage.getItem('keywords'));
-        $('#historySearch').html(template('historySearchTpl',{data:keywords}));
-    }
-    $('#clearHistory').on('tap',function(){
-        localStorage.removeItem('keywords');
-        $('#historySearch').html('');
-    })
-});
+//$(function(){
+//    $('#searchBtn').on('click',function(){
+//        var keyword = $('#keyword').val();
+//        if(!keyword){
+//            alert('请输入关键字');
+//            return;
+//        }
+//        if(localStorage.getItem('keywords')){
+//            var keywords = JSON.parse(localStorage.getItem('keywords'));
+//            keywords.push(keyword);
+//            localStorage.setItem('keywords',JSON.stringify(keywords));
+//        }else{
+//            localStorage.setItem('keywords',JSON.stringify([keyword]));
+//        }
+//        location.href = "search-list.html?key="+keyword;
+//    });
+//    if(localStorage.getItem('keywords')){
+//        var keywords = JSON.parse(localStorage.getItem('keywords'));
+//        $('#historySearch').html(template('historySearchTpl',{data:keywords}));
+//    }
+//    $('#clearHistory').on('tap',function(){
+//        localStorage.removeItem('keywords');
+//        $('#historySearch').html('');
+//    })
+//});
