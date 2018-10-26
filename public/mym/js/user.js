@@ -31,6 +31,6 @@ $(function(){
         });
     });
 
-    var html = template('userTpl'. userInfo);
+    var html = template('userTpl', userInfo);
     $('#userInfoBox').html(html);
 });
