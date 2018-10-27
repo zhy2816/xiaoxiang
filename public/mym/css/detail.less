@@ -1,0 +1,92 @@
+@import 'base.less';
+
+.mui-slider{
+  img {
+    vertical-align: top;
+  }
+}
+.product-title{
+  font-size: 16px;
+  padding: 10px;
+}
+.price{
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  > .now {
+    font-size: 24px;
+    color: #ea543d;
+  }
+  > .old {
+    color: #ccc;
+    text-decoration: line-through;
+    padding-left: 10px;
+  }
+}
+.size {
+  padding: 10px;
+  font-size: 14px;
+  > span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .active {
+    color: #FFF;
+    background: #fa672d;
+  }
+}
+
+.num {
+  padding: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 28px;
+  border-top: 1px solid #ccc;
+  .selectNum {
+    padding-right: 10px;
+    > span {
+      float: left;
+      width: 28px;
+      height: 28px;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 28px;
+    }
+    > input{
+      width: 28px;
+      height: 28px;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      float: left;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+
+.btns {
+  padding: 10px;
+  overflow: hidden;
+  > a, span {
+    float: left;
+    width: 50%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+  }
+  > a{
+    background: #fa672d;
+  }
+  > span{
+    background: #991020;
+  }
+}

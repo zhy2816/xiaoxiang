@@ -1,14 +1,23 @@
 @import 'base.less';
 
 .filter{
+  width: 100%;
   padding: 10px;
-  .mui-col-xs-6{
-    text-align: center;
+  > .mui-col-xs-6{
     height: 35px;
     line-height: 35px;
+    font-size: 14px;
+    text-align: center;
     background-color: #efeff4;
     > .mui-icon{
-      font-size: 18px;
+      font-size: 12px;
     }
   }
+}
+#refreshContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 50px;
+
 }

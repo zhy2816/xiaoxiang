@@ -1,0 +1,177 @@
+body {
+  background: #FFF;
+  font-size: 14px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+.mui-content {
+  background: #FFF;
+}
+.my-footer,
+.my-header {
+  background: #e4393c;
+}
+.my-header .mui-title {
+  color: #FFF;
+}
+.my-header .mui-icon {
+  color: #FFF;
+}
+.my-footer .mui-tab-item {
+  color: #FFF;
+}
+.my-footer .mui-tab-item.mui-active {
+  color: darkorange;
+}
+.product {
+  padding: 0 10px;
+}
+.product > ul {
+  padding: 6px 0;
+}
+.product > ul > li {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+.product > ul > li > a {
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+  padding: 5px;
+}
+.product > ul > li > a > img {
+  width: 100%;
+}
+.product > ul > li > a > .name {
+  display: block;
+  color: #8f8f94;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  height: 38px;
+  overflow: hidden;
+  padding: 5px;
+}
+.product > ul > li > a > p {
+  text-align: center;
+  padding-top: 6px;
+}
+.product > ul > li > a > p > span:first-child {
+  color: #f20;
+  padding-right: 2px;
+}
+.product > ul > li > a > p > span:last-child {
+  text-decoration: line-through;
+  padding-left: 2px;
+}
+.product > ul > li > a > .buy-now {
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #006699;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0 auto 5px auto;
+}
+.mui-slider img {
+  vertical-align: top;
+}
+.product-title {
+  font-size: 16px;
+  padding: 10px;
+}
+.price {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+.price > .now {
+  font-size: 24px;
+  color: #ea543d;
+}
+.price > .old {
+  color: #ccc;
+  text-decoration: line-through;
+  padding-left: 10px;
+}
+.size {
+  padding: 10px;
+  font-size: 14px;
+}
+.size > span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.size .active {
+  color: #FFF;
+  background: #fa672d;
+}
+.num {
+  padding: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 28px;
+  border-top: 1px solid #ccc;
+}
+.num .selectNum {
+  padding-right: 10px;
+}
+.num .selectNum > span {
+  float: left;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 28px;
+}
+.num .selectNum > input {
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  float: left;
+  border-left: none;
+  border-right: none;
+}
+.btns {
+  padding: 10px;
+  overflow: hidden;
+}
+.btns > a,
+.btns span {
+  float: left;
+  width: 50%;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFF;
+}
+.btns > a {
+  background: #fa672d;
+}
+.btns > span {
+  background: #991020;
+}
